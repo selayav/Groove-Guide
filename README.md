@@ -45,8 +45,10 @@ Furthermore, it was observed the CNN-LSTM model was able to identify more featur
 <img width="941" alt="image" src="https://github.com/user-attachments/assets/32985900-1ffa-4dd0-a3fb-a4f49c9dbb1e">
 
 ## Discussion
+As seen, the CNN-LSTM model produced better results than a CNN model alone. This is expected since music is time dependent; features change in predictable ways as time goes on, and features in different genres evolve in different ways. Unlike other models, I inorporated Groove-Guide allows users to explore SHAP values of features, allowing for model interpretability. This invites further exploration by reverse engineering only the important features back into an audio format, enabling a auditory insight into what makes a particular genre distinct.
 
 ## Conclusion
+In this project, I created an explainable CNN-LSTM model to classify music genres using the GTZAN dataset. This model achieved a test accuracy of 0.85. Using SHAP values, it is also possible to identify what features in the audio contribute to the classification.
 
 ## Citations
 [1] https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification
