@@ -57,4 +57,4 @@ In this project, I created an explainable CNN-LSTM model to classify music genre
 
 [2] https://github.com/crlandsc/Music-Genre-Classification-Using-Convolutional-Neural-Networks/tree/main
 
-[3] https://github.com/jsalbert/Music-Genre-Classification-with-Deep-Learning/](https://github.com/jsalbert/Music-Genre-Classification-with-Deep-Learning/tree/master
+[3] https://github.com/jsalbert/Music-Genre-Classification-with-Deep-Learning/tree/master
