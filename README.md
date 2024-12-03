@@ -3,7 +3,7 @@
 Write abstract here.
 
 ## Introduction
-Groove-Guide aims to classify the genres of music audios. This problem is interesting to me because I am a pianist, and I wanted to explore the applictions of machine learning to music.
+Groove-Guide aims to classify the genres of music audios ("Groove") and provide insight into the model's interpretability ("Guide"). This problem is interesting to me because I am a pianist, and I wanted to explore the applictions of machine learning to music. Several algorithms exist for music genre classification, and they are all neural networks. Neural networks are not interpretable, which is is why I want to incorporate explainable AI into the model. 
 
 Different genres have different features, including timbre, harmony and dynamics, but the genres can also have unique time dependencies of these features. Groove-Guide uses a hybrid CNN-LSTM model to classify music audios into genres. This hybrid model will be able to extract features of the audio, using the CNN architecture, and then learn time dependencies using the LSTM architecutre. However, one limitation of deep learning algorithms is that they are black-box algorithms. That is, they are not interpretable. To overcome this limitation, Groove-Guide uses SHapley Additive exPlanations (SHAP) values to identify regions in the audio that were most useful for the classification.
 
