@@ -47,10 +47,10 @@ Furthermore, it was observed the CNN-LSTM model was able to identify more featur
 ## Discussion
 As seen, the CNN-LSTM model produced better results than a CNN model alone. This is expected since music is time dependent; features change in predictable ways as time goes on, and features in different genres evolve in different ways. Unlike other models, I inorporated Groove-Guide allows users to explore SHAP values of features, allowing for model interpretability. This invites further exploration by reverse engineering only the important features back into an audio format, enabling a auditory insight into what makes a particular genre distinct.
 
-I was able to find another CNN-RNN model (referred to as CRNN by the creators) that classifies music and was trained on the GTZAN dataset [3]. Their CRNN model achieved an accuract of 77.9%. 
+I was able to find another CNN-RNN model (referred to as CRNN by the creators) that classifies music and was trained on the GTZAN dataset [3]. Their CRNN model achieved an accuract of 77.9%. Another CNN-LSTM model achieved an accuracy of 61% [4].
 
 ## Conclusion
-In this project, I created an explainable CNN-LSTM model to classify music genres using the GTZAN dataset. This model achieved a test accuracy of 0.85. Using SHAP values, it is also possible to identify what features in the audio contribute to the classification.
+In this project, I created an explainable CNN-LSTM model to classify music genres using the GTZAN dataset. This model achieved a test accuracy of 0.85. Using SHAP values, it is also possible to identify what features in the audio contribute to the classification. This model had only one CNN and one LSTM layer.
 
 ## Citations
 [1] https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification
@@ -58,3 +58,5 @@ In this project, I created an explainable CNN-LSTM model to classify music genre
 [2] https://github.com/crlandsc/Music-Genre-Classification-Using-Convolutional-Neural-Networks/tree/main
 
 [3] https://github.com/jsalbert/Music-Genre-Classification-with-Deep-Learning/tree/master
+
+[4] https://github.com/EsratMaria/MusicGenreRecogniton/blob/master/
