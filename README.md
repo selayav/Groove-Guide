@@ -1,4 +1,7 @@
 # Groove-Guide: Automatic Music Genre Classification with Explainable AI
+## Abstract
+Write abstract here.
+
 ## Introduction
 Groove-Guide aims to classify the genres of music audios. This problem is interesting to me because I am a pianist, and I wanted to explore the applictions of machine learning to music.
 
