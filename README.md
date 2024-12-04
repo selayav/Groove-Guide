@@ -8,7 +8,7 @@ Groove-Guide aims to classify the genres of music audios ("Groove") and provide 
 Different genres have different features, including timbre, harmony and dynamics, but the genres can also have unique time dependencies of these features. Groove-Guide uses a hybrid CNN-LSTM model to classify music audios into genres. This hybrid model will be able to extract features of the audio, using the CNN architecture, and then learn time dependencies using the LSTM architecutre. However, one limitation of deep learning algorithms is that they are black-box algorithms. That is, they are not interpretable. To overcome this limitation, Groove-Guide uses SHapley Additive exPlanations (SHAP) values to identify regions in the audio that were most useful for the classification.
 
 ## Set-Up
-The dataset used for this task is the GTZAN dataset [1]. This dataset contains music of 10 genres (blues, classical, country, disco, hip-hop, jazz, metal, pop, reggae, rock). Each genre has 100 audio files that are 30 seconds in length. To avoid using too many computation resources, my plan was to use Music Genre Classification Using Convolutional Neural Networks by Christopher R. Landschoot [2] as a pretrained model, and then add the LSTM architecture. However, the CNN model trained by Landschoot was not compatible with the version of the dataset at hand. So, instead, I processed the data and trained, tested and validated the CNN model created by Landschoot myself. I then added the LSTM architecture and compared the results of the CNN-LSTM model to the CNN model.
+The dataset used for this task is the GTZAN dataset [1]. This dataset contains music of 10 genres (blues, classical, country, disco, hip-hop, jazz, metal, pop, reggae, rock). Each genre has 100 audio files that are 30 seconds in length. To avoid using too many computation resources, my plan was to use Music Genre Classification Using Convolutional Neural Networks by Christopher R. Landschoot [2] as a pretrained model, and then add the LSTM architecture. However, the CNN model trained by Landschoot was not compatible with the version of the dataset at hand. So, instead, I processed the data and trained, tested and validated the CNN model created by Landschoot myself. I then added the LSTM architecture and compared the results of the CNN-LSTM model to the CNN model. All data was processed identically as in [2].
 
 Audio files can be represented as Spectrograms, which shows which frequencies are activated at a specific time. The three heatmaps below were obtained from [2]. 
 
@@ -30,9 +30,9 @@ Once the CNN model was trained, tested and validated, I added layers to incorpor
 
 <img width="480" alt="Screenshot 2024-12-02 at 3 02 58 PM" src="https://github.com/user-attachments/assets/4b2dd1d8-90dd-4b62-a82b-b0667c3e09ec">
 
-The models were trained using the T4 GPU on Google Colab. 
+The models were trained using the T4 GPU on Google Colab.
 
-Following this, SHAP values were obtained and plotted over the heatmap to identify features that are useful for classifying each audio clipping.
+Following this, SHAP values were obtained and plotted over the heatmap to identify features that are useful for classifying each audio clipping. All codes are available in the Code folder and the models are located in the Models folder.
 
 ## Results
 Overall, it was observed that the CNN-LSTM model outperformed the CNN model. The CNN-LSTM model was trained within fewer epochs and achieved higher accuracies and lower losses. 
