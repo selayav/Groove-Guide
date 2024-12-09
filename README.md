@@ -1,6 +1,6 @@
 # Groove-Guide: Automatic Music Genre Classification with Explainable AI
 ## Abstract
-Groove-Guide is an interpretable CNN-LSTM model that classifies music audios into genres. Using the CNN architecture, Groove-Guide learns features in Mel Frequency Cepstral Coefficients (MFCC) spectrograms of audio, and using the LSTM architecture, Groove-Guide learns the time-dependencies of these features. The model achieved a test accuracy of 0.85 and test loss of 0.56, compared to the standard CNN model, which achieved a test accuracy of 0.82 and test loss of 0.65. Using SHapley Additive exPlanations (SHAP), the Groove-Guide allows users to explore what features in the spectrogram were most useful in the prediction of the genre. The code can be found in the Code folder and the CNN and CNN-LSTM model can be found in the model folder.
+Groove-Guide is an interpretable CNN-LSTM model that classifies music audios into genres. Using the CNN architecture, Groove-Guide learns features in Mel Frequency Cepstral Coefficients (MFCC) spectrograms of audio, and using the LSTM architecture, Groove-Guide learns the time-dependencies of these features. The model achieved a test accuracy of 0.85 and test loss of 0.56, compared to the standard CNN model, which achieved a test accuracy of 0.82 and test loss of 0.65. Using SHapley Additive exPlanations (SHAP), the Groove-Guide allows users to explore what features in the spectrogram were most useful in the prediction of the genre. The code can be found in the Code folder and the CNN and CNN-LSTM model can be found in the Model folder of this repository.
 
 ## Introduction
 Groove-Guide aims to classify the genres of music audios ("Groove") and provide insight into the model's interpretability ("Guide"). This problem is interesting to me because I am a pianist, and I wanted to explore the applictions of machine learning to music. Several algorithms exist for music genre classification, and they are all neural networks. Neural networks are not interpretable, which is is why I want to incorporate explainable AI into the model. 
@@ -32,7 +32,7 @@ Once the CNN model was trained, tested and validated, I added layers to incorpor
 
 The models were trained using the T4 GPU on Google Colab.
 
-Following this, SHAP values were obtained and plotted over the heatmap to identify features that are useful for classifying each audio clipping. All codes are available in the Code folder and the models are located in the Models folder.
+Following this, SHAP values were obtained and plotted over the heatmap to identify features that are useful for classifying each audio clipping. All codes are available in the Code folder and the models are located in the Model folder.
 
 ## Results
 Overall, it was observed that the CNN-LSTM model outperformed the CNN model. The CNN-LSTM model was trained within fewer epochs and achieved higher accuracies and lower losses. 
