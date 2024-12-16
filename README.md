@@ -43,7 +43,7 @@ The CNN-LSTM model achieved a test accuracy of 0.85 and a test loss of 0.56, whi
 
 <img width="734" alt="image" src="https://github.com/user-attachments/assets/407ce174-08db-4778-9ee8-2292b6f85085">
 
-Furthermore, it was observed the CNN-LSTM model was able to identify more features for classification.
+Comparing SHAP values of the CNN and CNN-LSTM model, it was observed that the features considered useful were roughly the same in both models. This is in line with what is expected from the other results, where the accuracies of the models were roughly the same. The main advantage of the CNN-LSTM model is that it is trained in fewer epochs.
 
 <img width="941" alt="image" src="https://github.com/user-attachments/assets/32985900-1ffa-4dd0-a3fb-a4f49c9dbb1e">
 
